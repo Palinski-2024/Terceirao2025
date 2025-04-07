@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function(){
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
 
     });
-
-});
-const botaoDeacessibilidade = 
+    const botaoDeacessibilidade = document.getElementById('botao-acessibilidade')
+    const ppcoesDeAcessibilidadde = document.getElementById('opcoes-acesilidade')
+    
+    botaoDeacessibilidade.addEventListener('click',function (){})
+    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+ opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+})
