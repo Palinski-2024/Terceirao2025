@@ -14,10 +14,16 @@ document.addEventListener('DOMContentLoaded', function(){
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
 
     });
-    const botaoDeacessibilidade = document.getElementById('botao-acessibilidade')
-    const ppcoesDeAcessibilidadde = document.getElementById('opcoes-acesilidade')
-    
-    botaoDeacessibilidade.addEventListener('click',function (){})
-    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
- opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+    const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
+    const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
+    const alternaContraste = document.getElementById('alterna-contraste')
+
+    botaoDeAcessibilidade.addEventListener('click', function (){
+     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+     opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+     alternaContraste.addEventListener('click', function(){
+        document.body.classList.toggle('alto-contraste')
 })
+    });
+    
+});
